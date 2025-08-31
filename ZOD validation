@@ -1,0 +1,5 @@
+Validation for Image =>
+        imageFile: z
+        .custom<FileList>(val => val instanceof FileList, {
+            message: 'ملف غير صالح'
+          }).optional()
