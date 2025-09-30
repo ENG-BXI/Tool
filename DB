@@ -4,6 +4,8 @@ DB URL For Postgres => DATABASE_URL="postgresql://username:password@localhost:54
 DB FUNCTION STRUCTURE => 
         CREATE OR REPLACE FUNCTION function_name(parameters)
         RETURNS return_type AS $$
+        DECLEAR
+        result type;
         BEGIN
            -- الكود هنا
            RETURN something;
